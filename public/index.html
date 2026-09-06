@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Checker — bioRxiv</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar" id="topbar" style="display:none;">
+    <div class="brand">
+      <span class="brand-icon">◎</span>
+      <span>Page Checker</span>
+    </div>
+    <nav id="nav">
+      <button data-tab="dashboard" class="nav-btn active">Dashboard</button>
+      <button data-tab="page-types" class="nav-btn">Page Types</button>
+      <button data-tab="rules" class="nav-btn">Rules</button>
+      <button data-tab="recipients" class="nav-btn">Recipients</button>
+      <button data-tab="settings" class="nav-btn">Settings</button>
+      <button data-tab="users" class="nav-btn" id="users-nav-btn" style="display:none;">Users &amp; Permissions</button>
+      <button data-tab="sites" class="nav-btn" id="sites-nav-btn" style="display:none;">Manage Sites</button>
+    </nav>
+    <div id="user-info" style="display:flex; align-items:center; gap:12px;"></div>
+  </header>
+
+  <main id="app"></main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

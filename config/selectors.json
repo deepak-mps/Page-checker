@@ -1,0 +1,54 @@
+{
+  "homepage": {
+    "search_box": { "selector": "#search-block-form input[type='text'], form.search-block-form input, input[name='field_highwire_a_title_flat']", "type": "exists", "jsWait": true },
+    "subject_categories": { "selector": "#block-subjects a, .highwire-search-facets a, nav.subjects-nav a", "type": "list", "jsWait": true },
+    "latest_articles": { "selector": ".highwire-article-list .highwire-cite, .node--type-article, .latest-articles article", "type": "list", "jsWait": true },
+    "banner_notice": { "selector": ".region-highlighted, .biorxiv-notice-banner, .messages, .covid-banner", "type": "exists" },
+    "funders": { "selector": "#block-fundersblock, .funders-block, .region-funders", "type": "exists" }
+  },
+  "article_page": {
+    "article_title": { "selector": "#page-title, .highwire-cite-title, h1.article-title", "type": "text" },
+    "article_status": { "selector": ".pub_type, .status-badge, .highwire-article-collection-status, .article-status", "type": "text" },
+    "authors": { "selector": ".highwire-citation-authors .highwire-citation-author", "type": "list" },
+    "abstract": { "selector": "#abstract-1, .section.abstract .abstract-content, .abstract-content, .highwire-article-body-abstract", "type": "text" },
+    "doi": { "selector": ".highwire-cite-metadata-doi, .doi, .article-doi", "type": "text" },
+    "posting_date": { "selector": ".panel-pane.pane-custom .pane-content:has-text('Posted'), .pub-date, .posted-date", "type": "text" },
+    "competing_interest": { "selector": "h3:has-text('Competing Interest Statement') + p, #coi, .conflict-of-interest", "type": "text" },
+    "license": { "selector": ".pane-biorxiv-copyright .field-items, .license-type", "type": "text" },
+    "follow_button": { "selector": "a.follow-btn, .follow-button, [data-follow-button]", "type": "exists" },
+    "metrics": { "selector": "#metrics-info, .highwire-metrics, .article-metrics", "type": "exists", "jsWait": true },
+    "comments": { "selector": "#dashboard-launcher-badge-comments, #dashboard-launcher-count-comments", "type": "exists", "jsWait": true },
+    "related_preprints": { "selector": ".related-articles, #related-urls, .related-preprints", "type": "exists" },
+    "funders": { "selector": ".funders-block, #block-fundersblock", "type": "exists" }
+  },
+  "article_abstract": {
+    "article_title": { "selector": "#page-title, .highwire-cite-title, h1.article-title", "type": "text" },
+    "authors": { "selector": ".highwire-citation-authors .highwire-citation-author", "type": "list" },
+    "abstract": { "selector": "#abstract-1, .section.abstract .abstract-content, .abstract-content", "type": "text" },
+    "doi": { "selector": ".highwire-cite-metadata-doi, .doi, .article-doi", "type": "text" },
+    "body_text_absent_check": { "selector": ".article.fulltext-view, #fulltext-view, .full-text-body", "type": "exists" }
+  },
+  "article_full_text": {
+    "article_title": { "selector": "#page-title, .highwire-cite-title, h1.article-title", "type": "text" },
+    "authors": { "selector": ".highwire-citation-authors .highwire-citation-author", "type": "list" },
+    "abstract": { "selector": "#abstract-1, .section.abstract .abstract-content, .abstract-content", "type": "text" },
+    "body_text": { "selector": ".article.fulltext-view .section, #fulltext-view .section, .full-text-body p", "type": "text" },
+    "section_headings": { "selector": ".article.fulltext-view h2, .article.fulltext-view h3, .section-title", "type": "list" },
+    "figures": { "selector": ".fig, figure.fig-inline, .figure-caption", "type": "list" },
+    "references": { "selector": "#ref-list-1 li, .ref-list li, .references li", "type": "list", "attr": "href" },
+    "doi": { "selector": ".highwire-cite-metadata-doi, .doi, .article-doi", "type": "text" },
+    "license": { "selector": ".pane-biorxiv-copyright .field-items, .license-type", "type": "text" }
+  },
+  "article_pdf": {},
+  "search_page": {
+    "result_count": { "selector": ".pane-page-title .highwire-search-summary, #search-summary-wrapper", "type": "text" },
+    "term_label": { "selector": ".pane-page-title-suffix .highwire-search-summary, #search-summary-wrapper--2", "type": "text" },
+    "result_list": { "selector": ".highwire-article-list .highwire-cite, .search-result-item", "type": "list", "attr": "href" },
+    "pagination": { "selector": ".pager, nav.pager, .pagination", "type": "exists" }
+  },
+  "alerts_page": {
+    "alerts_title": { "selector": "#page-title, h1", "type": "text" },
+    "alerts_form": { "selector": "form.alerts-form, #alerts-management, .alert-management", "type": "exists" }
+  },
+  "not_found": {}
+}
